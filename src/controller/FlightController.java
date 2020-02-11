@@ -36,7 +36,9 @@ public class FlightController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String classtype=request.getParameter("class");
-		String date=request.getParameter("start");
+		String from=request.getParameter("from");
+		String to=request.getParameter("to");
+		
 		int rates;
 		if(classtype.equals("executive")){
 			rates=7500;
@@ -44,13 +46,15 @@ public class FlightController extends HttpServlet {
 		else {
 			rates=5000;
 		}
-		LocalDate start=LocalDate.parse(date);				
+		LocalDate start=LocalDate.parse(from);		
+		LocalDate end=LocalDate.parse(to);
 	
-		Flight flight=new Flight(numberOfPersons,rates,classtype,start);
+		Flight flight=new Flight(numberOfPersons,rates,classtype,start,end);
 		flight.setNoOfPersons(numberOfPersons);
 		flight.setRates(rates);
 		flight.setClassType(classtype);
-		flight.setDate(start);
+		flight.setFrom(start);
+		flight.setTo(end);
 		
 		FareCalculator fare=new FareCalculator();
 		

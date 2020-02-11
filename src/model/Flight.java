@@ -7,30 +7,39 @@ import services.Booking;
 public class Flight extends Booking{
 
 	
-	
 	private int noOfPersons;
 	private String classType;
 	private int rates;
-	private LocalDate date;
+	private LocalDate from;
+	private LocalDate to;
 	
-	public Flight(int noOfPersons, int rates, String busType, LocalDate date) {
+	public Flight(int noOfPersons, int rates, String busType, LocalDate from,LocalDate to) {
 	
 		this.noOfPersons=noOfPersons;
 		this.rates=rates;
 		this.classType=busType;
-		this.date=date;
+		this.from=from;
+		this.to=to;
 	}
 
+	
+	public LocalDate getFrom() {
+		return from;
+	}
+
+	public void setFrom(LocalDate from) {
+		this.from = from;
+	}
+
+	public LocalDate getTo() {
+		return to;
+	}
+
+	public void setTo(LocalDate to) {
+		this.to = to;
+	}
 	public int getNoOfPersons() {
 		return noOfPersons;
-	}
-
-	public LocalDate getDate() {
-		return date;
-	}
-
-	public void setDate(LocalDate date) {
-		this.date = date;
 	}
 
 	public void setNoOfPersons(int noOfPersons) {

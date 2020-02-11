@@ -50,7 +50,6 @@ $(function() {
 	  
 	});
 
-
 $(function() {
 	  // contact form animations
 	  $('#contact3').click(function() {
