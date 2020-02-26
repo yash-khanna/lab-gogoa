@@ -27,8 +27,8 @@ public class BusController extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		System.out.println("Entering do get");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		dispatcher.forward(request, response);
 	}
 
@@ -37,6 +37,9 @@ public class BusController extends HttpServlet {
 		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String bustype=request.getParameter("bustype");
 		String date=request.getParameter("start");
+		System.out.println(numberOfPersons);
+		System.out.println(bustype);
+		System.out.println(date);
 		int rates;
 		if(bustype.equals("acseater")){
 			rates=1250;
@@ -67,6 +70,7 @@ public class BusController extends HttpServlet {
 		FareCalculator fare=new FareCalculator();
 		
 		double rate=fare.book(bus);
+		System.out.println(rate);
 		request.setAttribute("busfare", rate);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		dispatcher.forward(request, response);

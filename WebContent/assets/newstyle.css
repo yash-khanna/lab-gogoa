@@ -3,6 +3,11 @@
 @import
 	url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 header {
 	display: flex;
 	flex-direction: row;
@@ -105,7 +110,8 @@ top: 289px; */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 11px; width : 95px;
+	padding: 11px;
+	width: 95px;
 	/*position: absolute;
  	width: 95px;
 	height: 52px;
@@ -156,7 +162,8 @@ background: #F05136; */
 	background: #FFFFFF;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
-	margin: 0px 0px 0px -51px; font-family : Quicksand;
+	margin: 0px 0px 0px -51px;
+	font-family: Quicksand;
 	font-style: normal;
 	font-weight: normal;
 	font-family: Quicksand;
@@ -190,86 +197,96 @@ background: #F05136; */
 	margin: 36px 0px 0px 104px;
 }
 
-.occupancy{
+.occupancy {
 	margin: 40px 0px 0px 10px;
 }
-.occupant-type{
+
+.occupant-type {
 	margin: 36px 0px 0px 5px;
 }
 
-.checkin{
+.checkin {
 	margin: 86px 0px 0px 51px;
-    position: absolute;
-        
+	position: absolute;
 }
-.checkout{
+
+.checkout {
 	margin: 86px 0px 0px 51px;
-    position: absolute;
-    padding:0px 0px 0px 200px;
-       
+	position: absolute;
+	padding: 0px 0px 0px 200px;
 }
-.in{
-	position:absolute;
+
+.in {
+	position: absolute;
 	margin: 110px 0px 0px 51px;
 	width: 154px;
-    height: 20px;
-        opacity: .3;
+	height: 20px;
+	opacity: .3;
 }
-input[type="date"]:active:hover:focus{
+
+input[type="date"]:active:hover:focus {
 	background: #F05136;
 	color: #ffffff;
 }
-.out{
-	position:absolute;
-	    width: 154px;
-    height: 20px;
-	    margin: 110px 0px 0px 250px;
-	        opacity: .3;
-}
-.guests{
-	    position: absolute;
-    margin: 86px 0px 0px 450px;
-}
-.persons{
-	    position: absolute;
-    margin: 110px 0px 0px 450px;
-    width: 154px;
-    height: 20px;
-        opacity: .3;
-}
-.train,.bus{
-	/* width: 100px; */
-    height: 20px;
-    margin: 36px 0px 0px 51px;
+
+.out {
+	position: absolute;
+	width: 154px;
+	height: 20px;
+	margin: 110px 0px 0px 250px;
+	opacity: .3;
 }
 
-.train-checkout,.bus-checkout{
+.guests {
+	position: absolute;
+	margin: 86px 0px 0px 450px;
+}
+
+.persons {
+	position: absolute;
+	margin: 110px 0px 0px 450px;
+	width: 154px;
+	height: 20px;
+	opacity: .3;
+}
+
+.train, .bus {
+	/* width: 100px; */
+	height: 20px;
+	margin: 36px 0px 0px 51px;
+}
+
+.train-checkout, .bus-checkout {
 	margin: 86px 0px 0px 51px;
-    position: absolute;
+	position: absolute;
 }
-.train-guests,.bus-guests{
+
+.train-guests, .bus-guests {
 	margin: 86px 0px 0px 51px;
-    position: absolute;
-    padding:0px 0px 0px 200px;
+	position: absolute;
+	padding: 0px 0px 0px 200px;
 }
-.train-out,.bus-out{
-	    position: absolute;
-    width: 154px;
-    height: 20px;
-    margin: 110px 0px 0px 51px;
-        opacity: .3;
+
+.train-out, .bus-out {
+	position: absolute;
+	width: 154px;
+	height: 20px;
+	margin: 110px 0px 0px 51px;
+	opacity: .3;
 }
-.train-persons,.bus-persons{
-	    position: absolute;
-    width: 154px;
-    height: 20px;
-    margin: 110px 0px 0px 250px;
-        opacity: .3;
+
+.train-persons, .bus-persons {
+	position: absolute;
+	width: 154px;
+	height: 20px;
+	margin: 110px 0px 0px 250px;
+	opacity: .3;
 }
-.bus-occupants{
-	  margin: 36px 0px 0px 10px;
-	      opacity: .3;
+
+.bus-occupants {
+	margin: 36px 0px 0px 10px;
 }
+
 .explore {
 	display: flex;
 	flex-direction: row;
@@ -332,13 +349,13 @@ footer {
 	display: flex;
 	flex-direction: row;
 	background: url('Footer.svg');
-	position: absolute;
+	position: relative;
 	width: 100%;
 	height: 190px;
 	/* left: 0px;
 	top: 1353px; */
-	background-size: 100%;
-	margin: 400px 0px 0px 0px;
+	background-size: cover;
+	/* margin: 400px 0px 0px 0px; */
 	background-repeat: no-repeat;
 	justify-content: center;
 	align-items: center;
@@ -379,66 +396,22 @@ top: 1476px; */
 .menu:checked+.label+.panel {
 	display: block;
 }
-/* Removes the clear button from date inputs */
-/* input[type="date"]::-webkit-clear-button {
-	display: none;
-}
 
-Removes the spin button
-input[type="date"]::-webkit-inner-spin-button {
-	display: none;
-}
-
-Always display the drop down caret
-input[type="date"]::-webkit-calendar-picker-indicator {
-	color: #2c3e50;
-}
-
-A few custom styles for date inputs
-input[type="date"] {
-	appearance: none;
-	-webkit-appearance: none;
-	  color: #95a5a6;
+.footer-logo {
+	position: absolute;
+	margin-left: 80px;
 	font-size: 18px;
-	border: 1px solid #ecf0f1;
-	  background:#ecf0f1;
-	padding: 5px;
-	display: inline-block !important;
-	visibility: visible !important;
+	font-family: Quicksand;
+	font-style: normal;
+	margin-top: 100px;
+	color: white;
 }
 
-input[type="date"], focus {
-	color: #95a5a6;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
+.result {
+	display: grid;
+	grid-template-rows: 100%;
+	margin: 10rem;
+	padding: 1rem;
+	color: black;
+	text-align: center;
 }
-
-input[type=date]:required:invalid::-webkit-datetime-edit {
-	color: transparent;
-}
-
-input[type=date]:focus::-webkit-datetime-edit {
-	color: black !important;
-}
-input[type="text"]{
-	
-}
-[placeholder]:focus::-webkit-input-placeholder {
-	color: transparent;
-}
-
-input[type="text"] {
-	padding: 5px;
-	appearance: none;
-	font-size: 18px;
-}
-
-input[type="date"], focus {
-	  color: #95a5a6;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	display: inline-block !important;
-	visibility: visible !important;
-} */

@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<meta name="vfiewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="./assets/newstyle.css"/>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" type="module" src="./myscript/script.js"></script>
+<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<!-- <script type="text/javascript" type="module" src="./myscript/script.js"></script> -->
 <title></title>
 </head>
 <body>
@@ -47,15 +47,15 @@ Make a plan, before one of your friend drops a bomb.
 							
 						<!--check in and check out date  -->
 								<label class="checkin" for="check-in">CHECK-IN</label>
-								<input class="in" type="date" name="from" id="check-in" required/>
+								<input class="in" type="date" name="from"  required/>
 						
 							
 								<label class="checkout" for="check-out">CHECKOUT</label>
-								<input class="out" type="date" name="to" id="check-out" required/>
+								<input class="out" type="date" name="to"  required/>
 							
 						<!--Specify the number of guests  -->
 								<label class="guests" for="guests">GUESTS</label>
-								<input class="persons" type="text" name="persons" placeholder="Number of Persons" id="guests"required/>
+								<input class="persons" type="text" name="persons" placeholder="Number of Persons" required/>
 								<button type="submit" class="formBtn">Calculate</button>
 					
 					</form>
@@ -84,15 +84,15 @@ Make a plan, before one of your friend drops a bomb.
 							
 							<!--check in and check out date  -->
 								<label class="checkin" for="check-in">START DATE</label>
-								<input class="in" type="date" name="from" id="check-in" required/>
+								<input class="in" type="date" name="from"  required/>
 						
 							
 								<label class="checkout" for="check-out">RETURN DATE</label>
-								<input class="out" type="date" name="to" id="check-out" required/>
+								<input class="out" type="date" name="to"  required/>
 							
 						<!--Specify the number of guests  -->
 								<label class="guests" for="guests">TRAVELLERS</label>
-								<input class="persons" type="text" name="persons" placeholder="Number of Persons" id="guests" required/>
+								<input class="persons" type="text" name="persons" placeholder="Number of Persons" required/>
 								
 					
 							<button type="submit" class="formBtn">Calculate</button>
@@ -107,8 +107,7 @@ Make a plan, before one of your friend drops a bomb.
 
 				<!-- Hotel booking form -->
 				<div class="login-box">
-					<form action="${pageContext.request.contextPath}/train"
-						method="post" class="myform">
+					<form action="${pageContext.request.contextPath}/train"	method="post" class="myform">
 						<!-- Room type fields goes here -->
 						<label class="train">CLASS</label> 
 						<input class="roomtype"	type="radio" name="berth" value="general" id="general" required/><label class="rooms" for="general">General</label> 
@@ -119,11 +118,11 @@ Make a plan, before one of your friend drops a bomb.
 
 						<!-- Departure Date -->
 						<label class="train-checkout" for="check-out">DEPARTURE DATE</label> 
-						<input class="train-out" type="date" name="to" id="check-out" required/>
+						<input class="train-out" type="date" name="to" required/>
 
 						<!--Specify the number of guests  -->
 						<label class="train-guests" for="guests">TRAVELLERS</label> 
-						<input class="train-persons" type="text" name="persons" placeholder="Number of Persons" id="guests" required/>
+						<input class="train-persons" type="text" name="persons" placeholder="Number of Persons" required/>
 
 
 						<button type="submit" class="formBtn">Calculate</button>
@@ -144,19 +143,18 @@ Make a plan, before one of your friend drops a bomb.
 							 <input class="roomtype" type="radio" name="bustype" value="acsleeper" id="acsleeper" required/><label class="rooms" for="acsleeper">Sleeper</label> 
 							 <input class="roomtype" type="radio" name="bustype" value="acsemisleeper" id="acsemisleeper"  required/><label class="rooms" for="acsemisleeper">Semi sleeper</label>
 							 <input class="roomtype" type="radio" name="bustype" value="acseater" id="acseater"  required/><label class="rooms" for="acseater">Seater</label>
-						<!-- Single of Double Occupancy to be specified here -->
-						
+					
 							<label class="bus-occupants">NON AC BUS</label> 
 							<input class="occupancy" type="radio" name="bustype" value="nonacsleeper" id="nonacsleeper" required/><label class="occupant-type" for="nonacsleeper">Sleeper</label> 
 							<input class="occupancy" type="radio" name="bustype" value="nonacsemisleeper" id="nonacsemisleeper" required/><label class="occupant-type" for="nonacsemisleeper">Semi Sleeper</label>
 							<input class="occupancy" type="radio" name="bustype" value="nonacseater" id="nonacseater" required/><label class="occupant-type" for="nonacseater">Seater</label>
 							<!--check out date  -->
 								<label class="bus-checkout" for="check-out">CHECKOUT</label>
-								<input class="bus-out" type="date" name="to" id="check-out" required/>
+								<input class="bus-out" type="date" name="start"  required/>
 							
 						<!--Specify the number of guests  -->
 								<label class="bus-guests" for="guests">GUESTS</label>
-								<input class="bus-persons" type="text" name="persons" placeholder="Number of Persons" id="guests" required/>
+								<input class="bus-persons" type="text" name="persons" placeholder="Number of Persons" required/>
 								
 					
 							<button type="submit" class="formBtn">Calculate</button>
@@ -181,7 +179,8 @@ Make a plan, before one of your friend drops a bomb.
 <footer>
 <div class="footer-content">CONTACT</div>
 <div class="support">support[AT]gogoa.com</div>
-
+<div class="footer-logo"><p>Made with <img src="./assets/prograd-heart.svg"> by ProGrad</p></div>
 </footer>
+
 </body>
 </html>

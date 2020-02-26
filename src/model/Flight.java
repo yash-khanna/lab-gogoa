@@ -12,17 +12,30 @@ public class Flight extends Booking{
 	private int rates;
 	private LocalDate from;
 	private LocalDate to;
-	
-	public Flight(int noOfPersons, int rates, String busType, LocalDate from,LocalDate to) {
+	private String triptype;
+
+
+	public Flight(int noOfPersons, int rates, String busType, LocalDate from,LocalDate to,String triptype) {
 	
 		this.noOfPersons=noOfPersons;
 		this.rates=rates;
 		this.classType=busType;
 		this.from=from;
 		this.to=to;
+		this.triptype=triptype;
+		
 	}
 
 	
+	public String getTriptype() {
+		return triptype;
+	}
+
+
+	public void setTriptype(String triptype) {
+		this.triptype = triptype;
+	}
+
 	public LocalDate getFrom() {
 		return from;
 	}

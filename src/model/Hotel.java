@@ -84,10 +84,4 @@ public class Hotel extends Booking {
 	public void setTodate(LocalDate todate) {
 		this.todate = todate;
 	}
-
-
-
-
-	
-	
 }

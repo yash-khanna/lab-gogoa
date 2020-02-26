@@ -59,10 +59,10 @@ public class HotelController extends HttpServlet {
 	
 		FareCalculator  fare=new FareCalculator();
 		double rate=fare.book(hotel);
-	
+		System.out.println(rate);
 		request.setAttribute("hotel", hotel);
 		request.setAttribute("hotelfare", rate);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/hotelOutputView.jsp");
 		dispatcher.forward(request, response);
 	
 	}
