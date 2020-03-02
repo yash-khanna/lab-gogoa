@@ -1,6 +1,6 @@
 package services;
 
-
+/*
 import java.time.temporal.ChronoUnit;
 
 import model.Bus;
@@ -10,7 +10,6 @@ import model.Train;
 
 public class FareCalculator extends Booking{
 
-	
 	public double book(Hotel hotel) {
 		
 		Double tariff;
@@ -56,3 +55,4 @@ public class FareCalculator extends Booking{
 
 	
 }
+*/

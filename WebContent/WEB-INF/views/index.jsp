@@ -179,8 +179,8 @@ Make a plan, before one of your friend drops a bomb.
 <footer>
 <div class="footer-content">CONTACT</div>
 <div class="support">support[AT]gogoa.com</div>
-<div class="footer-logo"><p>Made with <img src="./assets/prograd-heart.svg"> by ProGrad</p></div>
-</footer>
 
+</footer>
+<p class="footer-text">Made with <img src="./assets/prograd-heart.svg"> by ProGrad</p>
 </body>
 </html>

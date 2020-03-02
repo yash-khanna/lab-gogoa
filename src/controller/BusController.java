@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.Bus;
-import services.FareCalculator;
+//import model.Bus;
+//import services.FareCalculator;
 
 /**
  * Servlet implementation class BusController
@@ -34,7 +34,9 @@ public class BusController extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
+
+		
+		/*		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String bustype=request.getParameter("bustype");
 		String date=request.getParameter("start");
 		System.out.println(numberOfPersons);
@@ -59,6 +61,7 @@ public class BusController extends HttpServlet {
 		else {
 			rates=1000;
 		}
+		
 		LocalDate start=LocalDate.parse(date);				
 	
 		Bus bus=new Bus(numberOfPersons,rates,bustype,start);
@@ -74,6 +77,6 @@ public class BusController extends HttpServlet {
 		request.setAttribute("busfare", rate);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
 		dispatcher.forward(request, response);
-	}
-
+	*/}
+	
 }
