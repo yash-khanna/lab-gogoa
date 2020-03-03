@@ -4,8 +4,17 @@
 
 ## A Quick Introduction
 
-A simple lab to explain about java inheritance 
+Amy has packed her bags and is all pumped up to visit Goa with her bffs. 
 
+(On the day of travel)
+
+Amy's friend Penny has dropped a bomb. She informed that she wouldn't be able to make it to the trip as her dog was ill. Now, Amy is all furious & has canceled the plan. She had been dreaming of all the fun & partying. Alas the trip got canceled. 
+
+(A few days later)
+
+All this while, Amy hasn't spoken to any of her friends. She's still furious, not because the trip got canceled, but because she has spent almost a week planning it right from travel, hotel bookings, to the entire experience. 
+
+She then decided to make a simple application that could help every Goa dreamer make a plan quickly unlike her. Can you volunteer & help her out with it?
 
 
 ## What should you do
