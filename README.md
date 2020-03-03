@@ -14,7 +14,7 @@ Amy's friend Penny has dropped a bomb. She informed that she wouldn't be able to
 
 All this while, Amy hasn't spoken to any of her friends. She's still furious, not because the trip got canceled, but because she has spent almost a week planning it right from travel, hotel bookings, to the entire experience. 
 
-She then decided to make a simple application that could help every Goa dreamer make a plan quickly unlike her. Can you volunteer & help her out with it?
+She then decided to make a simple application that could help every Goa dreamer make a plan quickly unlike her. Can you volunteer & help her out & calm her down?
 
 
 ## What should you do
