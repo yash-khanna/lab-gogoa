@@ -11,12 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 //
-//import model.Flight;
-//import services.FareCalculator;
+import model.Flight;
+import services.FareCalculator;
 
-/**
- * Servlet implementation class FlightController
- */
 @WebServlet("/flight")
 public class FlightController extends HttpServlet {
 	private static final long serialVersionUID = 1L;

@@ -12,15 +12,39 @@
 <img class="logo" src="./assets/logo.svg"></img>
 </header>
 <section class="result">
-<div><p>YOUR DETAILS </p></div>
-<div><p>ROOM TYPE: ${hotel.getRoomType() } </p></div>
-<div><p>CHECK-IN:	${hotel.getFromdate() } </p></div>
-<div><p>CHECK-OUT:	${hotel.getTodate() } </p></div>
-<div><p>TOTAL GUESTS: ${hotel.getNoOfPersons()}</p></div>
-<!-- <div><p>TOTAL DAYS:</p></div> -->
-<div><p>TOTAL FARE	${hotelfare } </p></div>
+
+<table>
+
+<tr>
+<td>ROOM TYPE</td>
+<td> ${hotel.getRoomType()}</td>
+</tr>
+<tr>
+<td>CHECK-IN</td>
+<td> ${hotel.getFromdate()}</td>
+</tr>
+<tr>
+<td>CHECK-OUT</td>
+<td> ${hotel.getTodate()}</td>
+</tr>
+<tr>
+<td>TOTAL GUESTS</td>
+<td>${hotel.getNoOfPersons()}</td>
+</tr>
+<tr>
+<td>TOTAL GUESTS</td>
+<td>${hotelfare }</td>
+</tr>
+</table>
+
+
 </section>
 
-
+<footer>
+<div class="footer-content">CONTACT</div>
+<div class="support">support[AT]gogoa.com</div>
+</footer>
+<p class="footer-text">Made with <img src="./assets/prograd-heart.svg"> by ProGrad</p>
+</body>
 </body>
 </html>

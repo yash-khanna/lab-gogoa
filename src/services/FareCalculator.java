@@ -1,6 +1,6 @@
 package services;
 
-/*
+
 import java.time.temporal.ChronoUnit;
 
 import model.Bus;
@@ -55,4 +55,3 @@ public class FareCalculator extends Booking{
 
 	
 }
-*/
