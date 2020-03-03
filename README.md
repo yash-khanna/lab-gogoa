@@ -28,8 +28,8 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 
 ## Instructions
 
-1. Do not modify the entire code.
-2. Edit the code as per the instructions.***
+1. ***Do not modify the entire code***
+2. ***Edit the code as per the instructions.***
 3. ***Go to Java Resources -> src folder.***
 4. ***You will have 3 packages src/controller, src/model and src/service.***
 5. ***Create appropirate Classes inside the specified package as per the instructions given.***
