@@ -16,24 +16,20 @@
 <table>
 
 <tr>
-<td>ROOM TYPE</td>
-<td> ${hotel.getRoomType()}</td>
+<td>BUS TYPE</td>
+<td> ${bus.getBusType()}</td>
 </tr>
 <tr>
-<td>CHECK-IN</td>
-<td> ${hotel.getFromdate()}</td>
-</tr>
-<tr>
-<td>CHECK-OUT</td>
-<td> ${hotel.getTodate()}</td>
+<td>DEPARTURE</td>
+<td> ${bus.getDate()}</td>
 </tr>
 <tr>
 <td>TOTAL GUESTS</td>
-<td>${hotel.getNoOfPersons()}</td>
+<td>${bus.getNoOfPersons()}</td>
 </tr>
 <tr>
 <td>TOTAL FARE</td>
-<td>${hotelfare }</td>
+<td>${busfare}</td>
 </tr>
 </table>
 

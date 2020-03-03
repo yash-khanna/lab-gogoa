@@ -31,7 +31,7 @@ public class FlightController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	/*	int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
+		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String classtype=request.getParameter("class");
 		String from=request.getParameter("from");
 		String to=request.getParameter("to");
@@ -57,9 +57,10 @@ public class FlightController extends HttpServlet {
 		FareCalculator fare=new FareCalculator();
 
 		double rate=fare.book(flight);
+		request.setAttribute("flight", flight);
 		request.setAttribute("flightfare", rate);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/flightView.jsp");
 		dispatcher.forward(request, response);
-	*/}
+	}
 
 }

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HOTEL</title>
+<title>TRAIN</title>
 <link rel="stylesheet" type="text/css" href="./assets/newstyle.css"/>
 </head>
 <body>
@@ -16,24 +16,20 @@
 <table>
 
 <tr>
-<td>ROOM TYPE</td>
-<td> ${hotel.getRoomType()}</td>
+<td>BERTH TYPE</td>
+<td> ${train.getBerth()}</td>
 </tr>
 <tr>
-<td>CHECK-IN</td>
-<td> ${hotel.getFromdate()}</td>
-</tr>
-<tr>
-<td>CHECK-OUT</td>
-<td> ${hotel.getTodate()}</td>
+<td>DEPARTURE</td>
+<td> ${train.getDate()}</td>
 </tr>
 <tr>
 <td>TOTAL GUESTS</td>
-<td>${hotel.getNoOfPersons()}</td>
+<td>${train.getNoOfPersons()}</td>
 </tr>
 <tr>
 <td>TOTAL FARE</td>
-<td>${hotelfare }</td>
+<td>${trainfare}</td>
 </tr>
 </table>
 

@@ -36,7 +36,10 @@ public class TrainController extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int numberOfPersons=Integer.parseInt(request.getParameter("persons"));
 		String berth=request.getParameter("berth");
-		String date=request.getParameter("start");
+		String date=request.getParameter("to");
+		System.out.println(numberOfPersons);
+		System.out.println(berth);
+		System.out.println(date);
 		int rates;
 		if(berth.equals("ac1")){
 			rates=1500;
@@ -64,8 +67,9 @@ public class TrainController extends HttpServlet {
 		FareCalculator fare=new FareCalculator();
 		
 		double trainfare=fare.book(train);
+		request.setAttribute("train", train);
 		request.setAttribute("trainfare", trainfare);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/trainView.jsp");
 		dispatcher.forward(request, response);
 	}
 

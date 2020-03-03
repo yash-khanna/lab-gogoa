@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>HOTEL</title>
+<title>FLIGHT</title>
 <link rel="stylesheet" type="text/css" href="./assets/newstyle.css"/>
 </head>
 <body>
@@ -16,24 +16,24 @@
 <table>
 
 <tr>
-<td>ROOM TYPE</td>
-<td> ${hotel.getRoomType()}</td>
+<td>TRIP TYPE</td>
+<td> ${flight.getTriptype()}</td>
 </tr>
 <tr>
 <td>CHECK-IN</td>
-<td> ${hotel.getFromdate()}</td>
+<td> ${flight.getFrom()}</td>
 </tr>
 <tr>
 <td>CHECK-OUT</td>
-<td> ${hotel.getTodate()}</td>
+<td> ${flight.getTo()}</td>
 </tr>
 <tr>
 <td>TOTAL GUESTS</td>
-<td>${hotel.getNoOfPersons()}</td>
+<td>${flight.getNoOfPersons()}</td>
 </tr>
 <tr>
 <td>TOTAL FARE</td>
-<td>${hotelfare }</td>
+<td>${flightfare }</td>
 </tr>
 </table>
 

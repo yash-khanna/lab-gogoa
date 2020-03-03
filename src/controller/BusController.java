@@ -74,8 +74,9 @@ public class BusController extends HttpServlet {
 		
 		double rate=fare.book(bus);
 		System.out.println(rate);
+		request.setAttribute("bus", bus);
 		request.setAttribute("busfare", rate);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/index.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/views/busView.jsp");
 		dispatcher.forward(request, response);
 	}
 	
