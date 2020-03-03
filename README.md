@@ -106,5 +106,15 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
    - ***public double book(Bus bus)***
 4. ***Each method should return the user details and total fare***
 
+## Progression - 7
+1. ***In the public double book(Hotel hotel)***
+   - ***Check-In date should be less than Check-Out date.***
+   - ***Single occupancy can be given only for 1 guest.***
+   - ***If there are 3 guests then the rooms alloted should be 1 Double Occupancy room and 1 Single Occupancy.***
+   - ***Calculate the total fare after these conditions are met.***
+2. ***In public double book(Flight flight)***
+   - ***If one way trip is selected then departure date is not considered for fare calculation.***
+   - ***For round trips Start date should be less than return date.***
+
 
 Happy Coding ProGrad ❤️
