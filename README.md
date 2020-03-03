@@ -28,23 +28,22 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 
 ## Instructions
 
-1. ***Go through the instructions carefully.***
-2. ***Do not modify the entire code.***
-3. ***Edit the code as per the instructions.***
-4. ***Go to Java Resources -> src folder.***
-5. ***You will have 3 packages src/controller, src/model and src/service.***
-6. ***Create appropirate Classes inside the specified package as per the instructions given.***
-7. ***Once the progressions are completed follow the instructions to run the application and test your code.***
+1. ***Do not modify the entire code.***
+2. ***Edit the code as per the instructions.***
+3. ***Go to Java Resources -> src folder.***
+4. ***You will have 3 packages src/controller, src/model and src/service.***
+5. ***Create appropirate Classes inside the specified package as per the instructions given.***
+6. ***Once the progressions are completed, follow the instructions to run the application and test your code.***
  
 ## Run the Project
-1. ***Right - click on the project.***
+1. ***Right click on the project.***
 2. ***Go to Run as -> Run on server.***
 3. ***You can check the output in eclipse browser or in your browser.***
 4. ***Uncomment the codes in each controller to run the project.***
 
 
 ## Input Format
-1. ***Inputs are defined in each progressions*** 
+1. ***Inputs are defined in each progression*** 
 
 ## Output Format
 1. ***Output would be the user details and total fare***
