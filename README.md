@@ -71,7 +71,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 
 
 ## Progression - 2
-1. ***Create a parent class called Flight inside the model package with the following arguments***
+1. ***Create a parent class called Hotel inside the model package with the following arguments***
    - ***private int noOfPersons***
 	  - ***private String roomType***
 	  - ***private int rates***
