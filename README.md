@@ -60,10 +60,10 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 
 ## Progression - 1 
 1. ***Create a parent class called Flight inside the model package with the following arguments***
-   - ***private int noOfPersons***
-	  - ***private String classType***
-	  - ***private int rates***
-	  - ***private LocalDate from***
+   	- ***private int noOfPersons***
+	- ***private String classType***
+	- ***private int rates***
+	- ***private LocalDate from***
    	- ***private LocalDate to***
    	- ***private String triptype***
 2. ***Generate appropriate getters and setters.***
