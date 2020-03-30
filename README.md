@@ -112,7 +112,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
    - ***public double book(Flight flight)***
    - ***public double book(Train train)***
    - ***public double book(Bus bus)***
-4. ***Each method should return the user details and total fare***
+4. ***Each method should return the total fare***
 
 ## Progression - 7
 1. ***In the public double book(Hotel hotel)method inside the FareCalculator.***
